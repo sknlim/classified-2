@@ -1,0 +1,109 @@
+/* CSS Document */
+
+/* FloatingPage { */
+#floatingPage
+	{
+	display:none;
+	width:650px;				/* Width */
+	height:450px;				/* Height */
+	background:#FFFFFF;
+	position:absolute;
+	border:5px solid #444444;
+	}
+.windowPadding
+	{
+	padding:5px;
+	}
+#floatingClose, #alertBoxClose, #messageBoxClose, #confirmBoxClose
+	{
+	cursor:pointer;
+	float:right;
+	background:url(../../images/screenSeparator/close.gif);
+	width:20px;
+	height:20px;
+	}
+#floatingTitleBar, #alertBoxTitleBar, #messageBoxTitleBar, #confirmBoxTitleBar
+	{
+	border-bottom:1px solid #EEE;
+	background:url(../../images/screenSeparator/logo_small.gif) no-repeat top left;
+	height:20px;
+	padding:0;
+	margin:0;
+	}
+#alertBoxContent, #messageBoxContent, #confirmBoxContent
+	{
+	min-height:35px;
+	_height:35px;
+	}	
+#messageBoxBody
+	{
+	padding:10px 0 10px 0;
+	background:url(../../images/screenSeparator/message_box_bg.gif) left bottom repeat-x;
+	}
+#alertBoxBody
+	{
+	padding:10px 0 10px 0;
+	background:url(../../images/screenSeparator/alert_box_bg.gif) left bottom repeat-x;
+	}
+#confirmBoxBody
+	{
+	padding:10px 0 10px 0;
+	background:url(../../images/screenSeparator/confirm_box_bg.gif) left bottom repeat-x;
+	}
+#alertBoxContent, #messageBoxContent, #confirmBoxContent
+	{
+	font-size:14px;
+	font-family:"Trebuchet MS";
+	}
+#alertBoxBody input, #messageBoxBody input, #confirmBoxBody input
+	{
+	font-size:16px;
+	font-weight:bold;
+	font-family:"Trebuchet MS";
+	padding:0 20px 0 20px;
+	color:#666666;
+	}
+#floatingContent
+	{
+	padding:5px;
+	text-align:left;
+	height:410px;				/* Height - (2*Padding + Height of titleBar) */
+	overflow:auto;
+	}
+#floatingLoader
+	{
+	position:absolute;
+	display:none;
+	}
+/* } FloatingPage */	
+	
+/* Loader { */
+#floatingLoader
+	{
+	padding-left:105px;
+	height:65px;
+	line-height:65px;
+	background:url(../../images/screenSeparator/loading.gif) no-repeat left top;
+	}
+#floatingLoader #floatingLoaderContent
+	{
+	font-size:36px;
+	font-family:"Trebuchet MS";
+	color:#FFFFFF;
+	}
+/* } Loader*/
+
+
+
+
+/* alertBox { */
+#alertBox, #messageBox, #confirmBox
+	{
+	display:none;
+	width:450px;				/* Width */
+	background:#FFFFFF;
+	position:absolute;
+	border:5px solid #444444;
+	}
+/* } alertBox */
+	

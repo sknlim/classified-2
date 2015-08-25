@@ -1,0 +1,37 @@
+<?php 
+require_once $_SERVER['DOCUMENT_ROOT']."/common/class/category.class.php";
+$maincategory = new maincategory;
+$cat = $maincategory->getbyseo($_GET['seo_url']);
+//print_r($cat);
+$seo_header = '<meta name="description" content="Project for State - '.$cat['name'].'" />
+<meta name="keywords" content="'.$cat['sub_cat'].'" />';
+$page_title = "Project for ".$cat['sub_cat'];
+include "header.php"; 
+include "subheader.php"; 
+?>
+<p align="center">
+	<font size="+1"><a href="services.php">Services </a>- <a href="/index.php">USA</a> - &quot;<strong><?php echo $cat['name'];?></strong>&quot; <?php if($_GET['service_seo_url']!="") echo "- &quot;<strong>".$_GET['service_seo_url']."</strong>&quot;"; ?></font>
+</p>
+<h3>Services </h3>
+<?php
+$service = new service;
+$service->display_category();
+?>
+<br />
+<h3> Featured Service </h3>
+<?php
+$service = new service;
+$service_status = $service->display_service(1,$cat['id'],0,0,"order by posted_time desc",$_GET['service_seo_url']);
+?>
+<p align="right">
+	<?php
+	if($user_check->checklogin() && strtoupper($_SESSION['foongigs_usertype'])=="SEEKER")
+		echo '<a href="post_service.php" onclick="javascript:messageBox(\'Only Provider can post services\'); return false;">Post service</a>'; 
+	else if($user_check->checklogin() && strtoupper($_SESSION['foongigs_usertype'])=="PROVIDER")
+		echo '<a href="post_service.php">Post service</a>'; 
+	else
+		echo '<a href="post_service.php" onclick="javascript:messageBox(\'Please Login \'); return false;">Post service</a>'; 
+	if($service_status) { ?> | <a href="category_services.php?category=<?php echo $cat['seo_url'];?>">View More </a> <?php } ?></p>
+<br />
+<?php include "subfooter.php"; ?>
+<?php include "footer.php"; ?>

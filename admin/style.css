@@ -1,0 +1,16 @@
+.baseTable
+	{
+	border: 1px #000000 solid;
+	}
+.text
+	{
+	font-family: TrebuchetMS;
+	font-size: 14px;
+	color: #000000;
+	}
+.button
+	{
+	font-family: TrebuchetMS;
+	font-size: 11px;
+	color: #000000;
+	}

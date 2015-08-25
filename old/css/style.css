@@ -1,0 +1,292 @@
+/* CSS Document */
+ * 
+ 	{
+	margin: 0;
+	padding 0
+	}
+img 
+{
+	border: none;
+	padding: 0;
+}
+body
+{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	text-align: center;
+	background-color: #f1f1f1;	
+}
+body, th, h4, h5, h6
+	{
+	font: 83%/1.4 arial, helvetica, sans-serif;
+	color: #424242;
+	}
+#page
+{
+	padding: 0;
+	margin: 0 auto;
+	text-align: center;
+	min-height: 600px;
+	__height: 600px;
+	background:url(../images/boduLine.gif);
+	background-position: center;
+}
+#header
+{
+	margin: 0px;
+	padding: 0px;
+	background:url(../images/header_line.gif);
+	background-repeat: repeat-x;
+	height: 68px;
+}
+#header .top
+{
+	padding: 0;
+	margin: 0 auto;
+	width: 920px;
+	text-align: left;
+}
+#header .top .left
+{
+	float: left;
+	width: 165px;
+	text-align: left;
+	display: inline;
+}
+#header .top .right
+{
+	float: right;
+	width: 700px;
+}
+#main
+	{
+	margin:0 auto;
+	width: 920px;
+	text-align: left;
+	}
+#main .lc
+	{
+	margin-top: 10px;
+	width: 200px;
+	float: left;
+	display: inline;
+	}
+#main .rc
+	{
+	margin-top: 10px;
+	width: 680px;
+	margin-left: 230px;
+	}
+.login
+{
+	margin-left: 10px;
+	width: 200px;
+	padding-left: 5px;
+	border: 1px solid #EEEEEE;
+}
+.login .frm
+{
+	width: 180px;
+	padding: 5px;
+}
+.login .frm span
+{
+	color: #666666;
+	font-size: 12px;
+}
+.login ul
+{
+	list-style: none;
+	padding: 0;
+}
+.login li
+{
+	padding: 4px;
+}
+.brd
+{
+	border: 1px solid #000;
+}
+.lineBreak
+{
+	clear: both;
+	margin-top:2px;
+}
+.black_small
+{
+	color: #666666;
+	font-size: 12px;
+	font-weight:bold;
+}
+.input_box
+{
+	width: 100px;
+	height: 11px;
+}
+.input_box_small
+{
+	width: 76px;
+	height: 11px;
+}
+#leftmenu
+{
+	margin-left: 10px;
+	margin-top: 20px;
+	list-style: none;
+}
+#leftmenu li
+{
+	padding: 5px;
+	list-style: none;
+	font-size: 13px;
+	font-family: "Arial";
+	font-weight:bold;
+	color: #034d94;
+}
+#leftmenu li a
+{
+	padding: 5px;
+	list-style: none;
+	font-size: 13px;
+	font-family: "Arial";
+	font-weight:bold;
+	color: #034d94;
+}
+.heading
+{
+	height: 25px;
+	background: #ccdeaf;
+	font-size: 14px;
+	font-family: "Arial";
+	font-weight:bold;
+	color: #325b0a;
+	line-height:25px;
+	text-indent: 20px;
+}
+.text
+	{
+	text-indent: 10px;
+	font-family: "Arial";
+	font-size: 12px;
+	color: #666666;
+	}
+.text span
+	{
+	text-indent: 10px;
+	font-family: "Arial";
+	font-size: 12px;
+	color: #3e9100;
+	}
+.box
+	{
+	width: 680px;
+	}
+.white
+{
+	font-family: Arial;
+	font-size: 14px;
+	color: #ffffff;
+}
+.white a
+{
+	font-family: Arial;
+	font-size: 14px;
+	color: #ffffff;
+}
+.fieldName
+	{
+	float:left;
+	width: 200px;
+	text-align:right;
+	padding: 0 8px 0 0;
+	color:#333333;
+	}
+.fieldNameLeft
+	{
+	float:left;
+	width: 200px;
+	text-align:left;
+	padding: 0 8px 0 0;
+	color:#333333;
+	}
+.fieldVal
+	{
+	text-align:left;
+	margin-left:210px;
+	display:block;
+	}
+
+.fieldName_narrow
+	{
+	float:left;
+	width: 70px;
+	text-align:right;
+	padding: 0 8px 0 0;
+	color:#333333;
+	}
+
+.fieldName_narrowLeft
+	{
+	float:left;
+	width: 70px;
+	text-align:left;
+	padding: 0 8px 0 0;
+	color:#333333;
+	}
+.fieldVal_narrow
+	{
+	text-align:left;
+	margin-left:80px;
+	display:block;
+	}
+
+
+
+.formRow small input
+	{
+	height:12px;
+	margin: 0 3px 0 0;
+	}
+.formRow small
+	{
+	display:block;
+	clear:both;
+	padding:4px 0 0 0;
+	}
+.formRow
+	{
+	clear:both;
+	width:100%;
+	padding: 5px 0 5px 0;
+	}
+.formRow input
+	{
+	font-size: 12px;
+	}
+.form-text
+	{
+	width: 220px;
+	}
+#twocolumn_broadNarrow
+	{
+	margin:0 auto;
+	width: 900px;
+	text-align: left;
+	}
+#twocolumn_broadNarrow .lc
+	{
+	float:left;
+	width:600px;
+	padding-top:20px;
+	}
+
+#twocolumn_broadNarrow .rc
+	{
+	margin:40px 0 20px 0;
+	float:left;
+	padding-left:20px;
+	width:260px;
+ 	min-height:320px;
+ 	_height:320px;
+	}

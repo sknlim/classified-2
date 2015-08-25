@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+.wrongStatusIcon
+	{
+	vertical-align:middle;
+	display:-moz-inline-box;
+	display:inline-block;
+	width:24px;
+	height:16px;
+	background:url(../../images/widgets/validateForm/cross.gif) no-repeat center;
+	}
+.wrongStatus
+	{
+	font-size:11px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#FF0000;
+	}

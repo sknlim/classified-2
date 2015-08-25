@@ -1,0 +1,54 @@
+Classe PageNavigator
+Documentazione tecnica
+
+Scopo del componente
+
+Creazione e gestione di un menu di navigazione pagine accessibile tramite argomenti $_GET, che mantenga ad ogni variazione di pagina (o di risultati per pagina) tutti gli argomenti $_GET esistenti.
+
+Elenco metodi
+
+Function PageNavigator
+($rowsNum,$anchor="",$style="",$results_per_page=5,$name="")
+
+Costruttore della classe: 
+$rowsNum (numero di righe) è il parametro fondamentale il numero di elementi TOTALE da visualizzare. 
+$anchor è il nome dell’ancora dei collegamenti generati per il cambio di pagina o di risultati per pagina (infatti queste operazioni implicano il ricaricamento della pagina).
+$result_per_page è autoesplicativo….
+$name è un nome utile nel qual caso si utilizzassero 2 PageNavigator sulla stessa pagina. Infatti $name viene usato come suffisso per i nomi dei parametri $_GET.
+
+
+function getLimit()
+
+Restituisce semplicemente un stringa contenente la clausola LIMIT x,x di SQL da aggiungere alla query di selezione dei dati. Questo è molto utile perché con questa clausola, si limita l’estrazione dei dati ad un certo range di valori. Tale range è naturalmente legato alla pagina attualmente selezionata e al numero di risultati per pagina.
+
+
+
+function show_page_browsing ($googleLike=true,$offset=7) 
+
+
+Mostra la navigazione delle pagine in modalità semplice (tramite una semplice combo box) o ‘google like’ a seconda del parametro $googleLike. Il parametro $offset è un parametro utile solo in modalità ‘google like’.
+
+La modalità google like prevede una selezione delle pagine attraverso link diretti alle pagine, con un sistema di selezione delle pagine molto simile a google.
+Il parametro $offset specifica il numero di link (a pagine) visualizzati a sinistra e a destra quando ci si trova ‘in mezzo’ ovvero quando la pagina attuale ha un numero di pagine precedenti ed un numero di pagine successive maggiori di offset. 
+In parole povere, il numero massimo di link visualizzati in modalità google like è uguale a ($offset*2)+1.
+
+La seguente immagine mostra un esempio con $offset=7 
+
+
+
+
+function show_RPP_browsing($selections=10,$interval=5)
+
+Mostra la navigazione dei risultati per tramite una semplice combo box.
+
+$selections specifica il numero di selezioni possibili.
+$interval specifica l’intervallo tra il valore di una selezione e l’altra.
+Con i parametri predefiniti avremo 10 selezioni possibili come numero di risultati per pagina, la prima avrà valore 5, le successive 9 avranno valori multipli di 5.
+
+Nota: Se il valore dell’argomento $results_per_page passato al costruttore non ha un valore corrispondente ad una delle possibili selezioni di RPP, viene aggiunto alla combo box una selezione con tale valore.  
+
+
+
+
+
+

@@ -1,0 +1,128 @@
+/* CSS Document */
+ * {margin: 0; padding 0}
+ small { font-size: 10px; }
+img {border: none;padding: 0;}
+body{	margin: 0px;	padding: 0px;	width: 100%;	text-align: center;	background-color: #E8E8E8;	}
+form { margin:0; padding:0; }
+body, th, h4, h5, h6	{	font: 12px/1.4 arial, helvetica, sans-serif;	color: #424242;	}
+select { font: 12px/1.4 Arial, Helvetica, sans-serif; }
+#page{	padding: 0;	margin: 0 auto;	text-align: center;	min-height: 600px;	__height: 600px;}
+#logo { font-size:18px; text-decoration:none; color:#009900; line-height:68px}
+#header{margin: 0px;padding: 0px;height: 68px; }
+#header .top{padding: 0;	margin: 0 auto;	width: 920px;	text-align: left;}
+#header .top .left{	float: left;	width: 165px;	text-align: left;	display: inline;}
+#header .top .right{	float: left;	width: 585px;}
+#main	{	margin:0 auto;	width: 920px;	text-align: left;	}
+#main .lc	{ margin: 10px 0 0 10px;	float:left;	display: inline;	}
+#main .rc	{ margin: 10px 0 0 10px;	width: 680px;	float:left; /*margin-left: 230px;*/	}
+.login{	padding: 3px;	border: 2px solid #EEE;}
+.login div { background:#EEE; padding:6px; }
+.login div div { padding:0; }
+.login .frm{;	padding: 5px;}
+.login .frm span{	color: #666666;	font-size: 12px;}
+.login ul{	list-style: none;	padding: 0;}
+.login li{	padding: 4px;}
+.brd{	border: 1px solid #000;}
+.lineBreak{	clear: both;	margin-top:2px;}
+.lineBreakBig{	clear: both;	margin-top:10px;}
+.black_small{	color: #666666;	font-size: 12px;font-weight:bold;}
+.input_box{	width: 100px;	height: 11px;}
+.input_box_small{	width: 70px;	height: 11px;}
+#leftmenu{padding:0; margin:0; margin-top: 20px 0 0 10px;	list-style: none;}
+#leftmenu li{padding: 5px;	list-style: none; margin-top:5px}
+#leftmenu li a{font-size: 12px; font-family: "Times"; color: #0000FF; text-decoration:none}
+.heading{clear:both; background: #CCC;font-size: 14px;font-family: "Arial";	font-weight:bold; color: #333; padding: 0; line-height:1em; padding:1px}
+.subheading{clear:both; font-size: 16px;font-family: "Trebuchet MS"; font-weight: normal; color: #333; line-height:1em; border-bottom:1px solid #CCC; padding: 5px; background:#FFF; }
+.text{text-indent: 10px;font-family: "Arial";font-size: 12px;color: #666666;}
+.text span{text-indent: 10px;font-family: "Arial";font-size: 12px;color: #3e9100;}
+.box{width: 680px;}
+.white{	font-family: Arial;	font-size: 14px;color: #ffffff;}
+.white a{font-family: Arial;font-size: 14px;color: #ffffff;}
+
+.fieldName{float:left;width: 200px;text-align:right;padding: 0 8px 0 0;color:#333333;	}
+
+.fieldNameLeft{float:left;width: 200px;text-align:left;padding: 0 8px 0 0;color:#333333; margin-top: 5px;}
+.fieldVal{text-align:left;margin-left:210px;display:block;}
+.fieldValLeft{text-align:left; margin-left:210px; display:block; margin-top: 5px;}
+.fieldName_narrow{float:left;width: 70px;text-align:right;padding: 0 8px 0 0;color:#333333;}
+.fieldName_narrowLeft{float:left;width: 70px;text-align:left;padding: 0 8px 0 0;color:#333333;}
+.fieldVal_narrow{text-align:left;margin-left:80px;display:block;}
+.formRow small input{height:12px;margin: 0 3px 0 0;}
+.formRow small{display:block;clear:both;padding:4px 0 0 0;}
+.formRow{ padding:5px 0 5px 0;}
+.formRow input{	font-size: 12px;}
+.form-text{	width: 220px;}
+
+
+.fieldNameBig{float:left; padding: 0 8px 0 0;color:#333333; width: 100%; margin-top: 5px;}
+.fieldNamewithheader{float:left; padding: 0 8px 0 0;color:#333333; width: 100%; margin-top: 15px; margin-bottom: 10px; background: #ddd;}
+.fieldNameVal{float:left; padding: 0 8px 0 0;color:#333333; width: 100%; }
+.fieldNameLeftBig{float:left;width: 200px;text-align:left;padding: 0 8px 0 0;color:#333333;}
+.fieldValBig{text-align:left;margin-left:210px;display:block;}
+.formRowBig small input{height:12px;margin: 0 3px 0 0;}
+.formRowBig small{display:block;clear:both;padding:4px 0 0 0;}
+.formRowBig{width:100%;}
+.formRowBig .heading{ height: 25px;	font-size: 12px;}
+.formRowBig input{	font-size: 12px;}
+.form-textBig{	width: 220px;}
+.width250{	width: 250px;}
+.red{ color: #FF0000; }
+.formRowBig small{clear: left; float:left; width: 100%; }
+
+
+#twocolumn_broadNarrow	{margin:0 auto;	width: 900px;	text-align: left;}
+#twocolumn_broadNarrow .lc	{float:left;width:600px;padding-top:20px;}
+#twocolumn_broadNarrow .rc	{margin:40px 0 20px 0;float:left;padding-left:20px;width:260px;min-height:320px;_height:320px;}
+
+.sub_categories {margin:0; padding:0; list-style:none; border:0; font-size:11px;}
+.sub_categories td.whiteBg { background:#FFF; font-size:11px;  padding:2px 6px 0 4px;}
+.sub_categories td.redBg { background:#CCCCCC; font-size:11px;  padding:2px 6px 0 4px;}
+.inlineBlock { display:-moz-inline-box; display:inline-block; vertical-align:top;}
+.vMiddle { vertical-align:middle;}
+.wrapper { }
+.content { padding:20px; text-align:left /*display:-moz-inline-box; display:inline-block;*/ }
+br { clear:both }
+.formLeft label { display:block; font-size:17px; font-weight:bold; color:#666666; font-family:Arial;}
+.formLeft .checkStatus { display:block; padding:0; margin:0; }
+.formRow .bigTextBox, .vistaStyle
+	{
+		border-top:1px solid #BBB;
+		border-left:1px solid #BBB;
+		border-bottom:1px solid #EEE;
+		border-right:	1px solid #EEE;
+	}
+.formRow .bigTextBox
+	{
+		font-size:14px;
+		padding:3px;
+	}
+.bigButton
+	{
+		font-size:12px;
+		font-family:"Trebuchet MS";
+		font-weight:bold;
+		color:#333;
+		padding-left:15px;
+		padding-right:15px;
+		height:30px;
+	}
+
+.jobtype 
+{
+list-style:none;
+}
+
+.jobtype li
+{
+float:left;
+width:200px;
+}
+.tableDetails th
+	{
+	text-align:left;
+	font-weight:bold;
+	}
+.fir
+	{
+	background:#EEE;
+	}

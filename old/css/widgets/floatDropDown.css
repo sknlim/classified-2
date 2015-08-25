@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+.floatDropDown ul
+	{
+	display:none;
+	}
+.floatDropDownDiv
+	{
+	border-top:1px solid #DDDDDD;
+	border-left:1px solid #DDDDDD;
+	border-bottom:1px solid #999999;
+	border-right:1px solid #999999;
+	background:#FFFFFF;
+	}
+.floatDropDownDiv ul
+	{
+	margin:0;
+	padding:0;
+	list-style:none;
+	}
+
+.floatDropDownDiv ul li
+	{
+	text-align:left;
+	float:left;
+	clear:both;
+	}
+
+.floatDropDownDiv ul li a
+	{
+	color:#0033CC;
+	font-size:12px;
+	text-decoration:none;
+	width:150px;
+	padding:3px;
+	padding-left:10px;
+	display:block;
+	}
+
+.floatDropDownDiv ul li a:hover
+	{
+	background:#EEEEEE;
+	}
+a.arrowFloatDropDown img
+	{
+	border:0;
+	}
+a.arrowFloatDropDown
+	{
+	border:1px solid #FFF;
+	}
+a:hover.arrowFloatDropDown
+	{
+	background:#EEF;
+	border-left:1px solid #DDF;
+	border-top:1px solid #DDF;
+	border-bottom:1px solid #BBE;
+	border-right:1px solid #BBE;
+	}
